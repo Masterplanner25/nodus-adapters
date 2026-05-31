@@ -6,13 +6,18 @@ build-backend = "setuptools.build_meta"
 name = "nodus-adapter-base"
 version = "0.1.0"
 description = "Abstract base for nodus channel adapters: reconnect loop, health recording, connection manager"
+authors = [{ name = "Shawn Knight" }]
+license = { text = "MIT" }
+readme = "README.md"
 requires-python = ">=3.11"
-license = "MIT"
-authors = [{ name = "Masterplanner25" }]
-dependencies = ["nodus-channels>=0.1.0", "nodus-http>=0.1.0", "nodus-events>=0.1.0"]
+dependencies = ["nodus-channels>=0.1.0"]
 
 [project.optional-dependencies]
-test = ["pytest>=8.0", "pytest-asyncio>=0.21"]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.21"]
+
+[project.urls]
+Homepage = "https://github.com/Masterplanner25/nodus-adapters"
+Repository = "https://github.com/Masterplanner25/nodus-adapters"
 
 [tool.setuptools.packages.find]
 where = ["."]
@@ -20,3 +25,4 @@ include = ["nodus_adapter_base*"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
+testpaths = ["tests"]
