@@ -6,7 +6,7 @@ Provides the reconnect loop, health recording, and connection management
 so concrete adapters (Slack, Discord, webhook, etc.) only implement the
 three transport-specific methods.
 
-> **Status:** v0.1.0 — prepared, not yet published.
+> **Status:** v0.1.0 — published on [PyPI](https://pypi.org/project/nodus-adapter-base/).
 
 ---
 
